@@ -1,19 +1,19 @@
 {
   "author": "Jillboy",
 
-  "background": {
-    "scripts": ["background.js"]
-  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch?v=*"],
+      "js": ["spoilerfree.js"],
+      "run_at": "document_start"
+    }
+  ],
 
-  "description": "Hides recommended videos, comments and video length; automatically plays next video in a series; allows user to vote for MVP and best games and see the results of the votes.",
+  "description": "Spoiler-free VoD viewing experience.",
 
   "manifest_version": 2,
 
-  "name": "Spoiler-free LoLEventVoDs",
-
-  "permissions": [
-    "webNavigation"
-  ],
+  "name": "Spoiler-free Event VoDs",
 
   "version": "0.1"
 }
