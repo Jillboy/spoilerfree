@@ -1,7 +1,7 @@
 var channel = '';
 var metaElems = document.getElementsByTagName('meta');
 
-// Get channelId from video page.
+// Get channelId from video page
 for (var i = 0; i < metaElems.length; i++) {
   prop = metaElems[i].getAttribute('itemprop');
   if (prop == 'channelId') {
@@ -11,7 +11,7 @@ for (var i = 0; i < metaElems.length; i++) {
 }
 
 if (channel == 'UCQJT7rpynlR7SSdn3OyuI_Q' /* LoLEventVoDs */) {
-  // Hide sidebar.
+  // Hide sidebar
   var sidebar = document.getElementById('watch7-sidebar');
   sidebar.style.display = 'none';
 }
